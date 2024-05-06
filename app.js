@@ -69,3 +69,14 @@ thumbnails.forEach((thumbnail, index) => {
 })
 
 
+
+// scroll up(copy past)
+
+
+const scrollUp=() => {
+    const scrollUp = document.getElementById('scroll-up')
+    // when the scroll is higer then 350 view port ,add the show scrool class 
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        :scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll',scrollUp)
